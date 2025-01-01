@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import poultryplus.character.MyCharacter;
 import poultryplus.powers.NextTurnFlightMultPower;
-import poultryplus.powers.NextTurnFlightPower;
 import poultryplus.util.CardStats;
 
 public class CondorEgg extends BaseCard{
@@ -29,8 +28,6 @@ public class CondorEgg extends BaseCard{
 
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(FLIGHTMULT);
-
-        tags.add(AbstractCard.CardTags.STARTER_DEFEND);
     }
 
     @Override

@@ -38,5 +38,13 @@
       "Apply #b",
       " #yVulnerable to all enemies next turn."
     ]
+  },
+
+  "${modID}:Tailwind": {
+    "NAME": "Tailwind",
+    "DESCRIPTIONS": [
+      "Whenever you gain #yFlight, gain an additional ",
+      " #yFlight."
+    ]
   }
 }
