@@ -1,0 +1,98 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description. NL Second line.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! block."
+  },
+
+  "${modID}:CondorEgg": {
+    "NAME": "Condor Egg",
+    "DESCRIPTION": "Gain !B! block. NL Next turn, double your *Flight."
+  },
+
+  "${modID}:EagleEye": {
+    "NAME": "Eagle Eye",
+    "DESCRIPTION": "Apply *Vulnerable equal to your *Flight."
+  },
+
+  "${modID}:Takeoff": {
+    "NAME": "Takeoff",
+    "DESCRIPTION": "If you have no *Flight, gain !M! *Flight."
+  },
+
+
+  "${modID}:EggBandit": {
+    "NAME": "Egg Bandit",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard all cards drawn this way that do not contain \"Egg\"."
+  },
+
+  "${modID}:Omelette": {
+    "NAME": "Omelette",
+    "DESCRIPTION": "Activate all of your Next Turn effects immediately."
+  },
+
+  "${modID}:EggOn": {
+    "NAME": "Egg On",
+    "DESCRIPTION": "Apply 1 *Weak and 1 *Vulnerable for each Next Turn effect you have."
+  },
+
+  "${modID}:Incubation": {
+    "NAME": "Incubation",
+    "DESCRIPTION": "Double any Next Turn effects you have."
+  },
+
+  "${modID}:Eggshell": {
+    "NAME": "Eggshell",
+    "DESCRIPTION": "Gain !B! block. NL Next turn, gain !M! *Flight."
+  },
+
+  "${modID}:SkyDrop": {
+    "NAME": "Sky Drop",
+    "DESCRIPTION": "Apply 5 *Sky *Drop. NL When a creature loses its *Sky *Drop, it takes !M! damage for each *Sky *Drop lost."
+  },
+
+  "${modID}:Woodpecker": {
+    "NAME": "Woodpecker",
+    "DESCRIPTION": "Deal !D! damage 7 times. NL Gain !M! *Vulnerable."
+  },
+
+  "${modID}:QuickPeck": {
+    "NAME": "Quick Peck",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! *Flight."
+  },
+
+  "${modID}:AerialAce": {
+    "NAME": "Aerial Ace",
+    "DESCRIPTION": "Deal !D! damage. NL Deals an additional !M! damage if the target is *Vulnerable."
+  },
+
+  "${modID}:Gust": {
+    "NAME": "Gust",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Discard the rightmost card in your hand."
+  },
+
+  "${modID}:Soar": {
+    "NAME": "Soar",
+    "DESCRIPTION": "Gain !M! *Flight. NL Draw 1 card."
+  },
+
+  "${modID}:EagleEgg": {
+    "NAME": "Eagle Egg",
+    "DESCRIPTION": "Gain !B! block. NL Next turn, apply !M! *Vulnerable to ALL enemies."
+  }
+}
