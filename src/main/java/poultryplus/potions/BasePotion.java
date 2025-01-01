@@ -2,7 +2,6 @@ package poultryplus.potions;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
@@ -12,6 +11,7 @@ import java.lang.reflect.Field;
 
 public abstract class BasePotion extends AbstractPotion {
     private static final Field containerImg, outlineImg, liquidImg, hybridImg, spotsImg;
+
     static {
         try {
             containerImg = AbstractPotion.class.getDeclaredField("containerImg");
@@ -25,8 +25,7 @@ public abstract class BasePotion extends AbstractPotion {
             liquidImg.setAccessible(true);
             hybridImg.setAccessible(true);
             spotsImg.setAccessible(true);
-        }
-        catch (NoSuchFieldException e) {
+        } catch (NoSuchFieldException e) {
             throw new RuntimeException("Failed to access potion image fields.", e);
         }
     }
@@ -34,7 +33,7 @@ public abstract class BasePotion extends AbstractPotion {
     public PotionStrings potionStrings;
     public String[] DESCRIPTIONS;
     public int basePotency;
-    public AbstractPlayer.PlayerClass playerClass = null;
+    // public AbstractPlayer.PlayerClass playerClass = null;
 
     public BasePotion(String id, int potency, PotionRarity rarity, PotionSize shape, Color liquidColor, Color hybridColor, Color spotsColor) {
         super("", id, rarity, shape, PotionEffect.NONE, liquidColor, hybridColor, spotsColor);
@@ -79,6 +78,7 @@ public abstract class BasePotion extends AbstractPotion {
     }
 
     public abstract String getDescription();
+
     public void addAdditionalTips() {
 
     }
@@ -90,6 +90,7 @@ public abstract class BasePotion extends AbstractPotion {
             throw new RuntimeException(e);
         }
     }
+
     public final Texture getContainerImg() {
         try {
             return (Texture) containerImg.get(this);
@@ -97,13 +98,15 @@ public abstract class BasePotion extends AbstractPotion {
             throw new RuntimeException(e);
         }
     }
-    public final  Texture getLiquidImg() {
+
+    public final Texture getLiquidImg() {
         try {
             return (Texture) liquidImg.get(this);
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e);
         }
     }
+
     public final Texture getHybridImg() {
         try {
             return (Texture) hybridImg.get(this);
@@ -111,6 +114,7 @@ public abstract class BasePotion extends AbstractPotion {
             throw new RuntimeException(e);
         }
     }
+
     public final Texture getSpotsImg() {
         try {
             return (Texture) spotsImg.get(this);
@@ -126,6 +130,7 @@ public abstract class BasePotion extends AbstractPotion {
             throw new RuntimeException(e);
         }
     }
+
     public final void setContainerImg(Texture t) {
         try {
             containerImg.set(this, t);
@@ -133,6 +138,7 @@ public abstract class BasePotion extends AbstractPotion {
             throw new RuntimeException(e);
         }
     }
+
     public final void setLiquidImg(Texture t) {
         try {
             liquidImg.set(this, t);
@@ -140,6 +146,7 @@ public abstract class BasePotion extends AbstractPotion {
             throw new RuntimeException(e);
         }
     }
+
     public final void setHybridImg(Texture t) {
         try {
             hybridImg.set(this, t);
@@ -147,6 +154,7 @@ public abstract class BasePotion extends AbstractPotion {
             throw new RuntimeException(e);
         }
     }
+
     public final void setSpotsImg(Texture t) {
         try {
             spotsImg.set(this, t);

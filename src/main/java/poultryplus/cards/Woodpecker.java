@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import poultryplus.character.MyCharacter;
 import poultryplus.util.CardStats;
 
-public class Woodpecker extends BaseCard{
+public class Woodpecker extends BaseCard {
     public static final String ID = makeID("Woodpecker");
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,

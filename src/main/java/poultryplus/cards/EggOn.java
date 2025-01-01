@@ -1,6 +1,5 @@
 package poultryplus.cards;
 
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -33,9 +32,9 @@ public class EggOn extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         int count = 0;
 
-        if (AbstractDungeon.player.powers != null){
+        if (AbstractDungeon.player.powers != null) {
             for (AbstractPower power : AbstractDungeon.player.powers) {
-                if (power.ID.contains("Next")){
+                if (power.ID.contains("Next")) {
                     count++;
                 }
             }

@@ -1,16 +1,10 @@
 package poultryplus.powers;
 
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static poultryplus.BasicMod.makeID;
@@ -24,7 +18,7 @@ public class SkyDropPower extends BasePower {
 
     public SkyDropPower(AbstractCreature owner, int amount, int intensity) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
-        this.FINAL_DMG = amount * intensity;
+        FINAL_DMG = amount * intensity;
     }
 
     public void atStartOfTurn() {

@@ -7,10 +7,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import poultryplus.character.MyCharacter;
 import poultryplus.powers.NextTurnApplyVulnerablePower;
-import poultryplus.powers.NextTurnFlightPower;
 import poultryplus.util.CardStats;
 
-public class EagleEgg extends BaseCard{
+public class EagleEgg extends BaseCard {
     // Gain block, apply vulnerable to all next turn
     public static final String ID = makeID("EagleEgg");
     private static final CardStats info = new CardStats(

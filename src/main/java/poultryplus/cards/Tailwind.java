@@ -8,7 +8,7 @@ import poultryplus.character.MyCharacter;
 import poultryplus.powers.TailwindPower;
 import poultryplus.util.CardStats;
 
-public class Tailwind extends BaseCard{
+public class Tailwind extends BaseCard {
     // When flight is applied, apply one more
     // NEEDS CODE PATCH
     public static final String ID = makeID("Tailwind");

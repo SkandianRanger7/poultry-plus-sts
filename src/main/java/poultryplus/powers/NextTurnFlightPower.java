@@ -1,13 +1,8 @@
 package poultryplus.powers;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static poultryplus.BasicMod.makeID;
@@ -24,7 +19,7 @@ public class NextTurnFlightPower extends BasePower {
     public void atStartOfTurn() {
         flash();
         addToBot(new ApplyPowerAction(this.owner, this.owner, new PlayerFlightPower(this.owner, this.amount)));
-        addToTop(((AbstractGameAction) new RemoveSpecificPowerAction(this.owner, this.owner, this.POWER_ID)));
+        addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
     }
 
     public void updateDescription() {

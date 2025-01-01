@@ -2,7 +2,6 @@ package poultryplus.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -10,7 +9,7 @@ import poultryplus.character.MyCharacter;
 import poultryplus.powers.PlayerFlightPower;
 import poultryplus.util.CardStats;
 
-public class Soar extends BaseCard{
+public class Soar extends BaseCard {
     // Gain 1 flight draw 1 card
     public static final String ID = makeID("Soar");
     private static final CardStats info = new CardStats(

@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import poultryplus.character.MyCharacter;
 import poultryplus.util.CardStats;
 
-public class Strike extends BaseCard{
+public class Strike extends BaseCard {
     public static final String ID = makeID("Strike");
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,

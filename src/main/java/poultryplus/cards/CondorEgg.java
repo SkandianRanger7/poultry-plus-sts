@@ -9,9 +9,9 @@ import poultryplus.character.MyCharacter;
 import poultryplus.powers.NextTurnFlightMultPower;
 import poultryplus.util.CardStats;
 
-public class CondorEgg extends BaseCard{
-   // Gain block, double flight next turn
-   public static final String ID = makeID("CondorEgg");
+public class CondorEgg extends BaseCard {
+    // Gain block, double flight next turn
+    public static final String ID = makeID("CondorEgg");
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             AbstractCard.CardType.SKILL,

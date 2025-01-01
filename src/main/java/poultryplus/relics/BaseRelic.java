@@ -2,12 +2,12 @@ package poultryplus.relics;
 
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
-import poultryplus.util.GeneralUtils;
-import poultryplus.util.TextureLoader;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import poultryplus.util.GeneralUtils;
+import poultryplus.util.TextureLoader;
 
 import static poultryplus.BasicMod.relicPath;
 
@@ -44,8 +44,7 @@ public abstract class BaseRelic extends CustomRelic {
             outlineImg = TextureLoader.getTextureNull(relicPath(imageName + "Outline.png"), true);
             if (outlineImg == null)
                 outlineImg = img;
-        }
-        else {
+        } else {
             ImageMaster.loadRelicImg("Derp Rock", "derpRock.png");
             this.img = ImageMaster.getRelicImg("Derp Rock");
             this.outlineImg = ImageMaster.getRelicOutlineImg("Derp Rock");
@@ -58,8 +57,7 @@ public abstract class BaseRelic extends CustomRelic {
             if (largeImg == null) {
                 this.largeImg = ImageMaster.loadImage(relicPath("large/" + imageName + ".png"));
             }
-        }
-        else {
+        } else {
             super.loadLargeImg();
         }
     }
@@ -86,6 +84,7 @@ public abstract class BaseRelic extends CustomRelic {
 
     /**
      * Checks whether relic has localization set up correctly and gives a more accurate error message if it does not
+     *
      * @param ID the relic's ID
      * @return the relic's ID, to allow use in super constructor invocation
      */

@@ -8,7 +8,7 @@ import poultryplus.character.MyCharacter;
 import poultryplus.powers.NextTurnFlightPower;
 import poultryplus.util.CardStats;
 
-public class Eggshell extends BaseCard{
+public class Eggshell extends BaseCard {
     public static final String ID = makeID("Eggshell");
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,

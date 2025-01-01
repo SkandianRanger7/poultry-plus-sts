@@ -1,15 +1,10 @@
 package poultryplus.powers;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ChangeStateAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class PlayerFlightPower extends AbstractPower {
@@ -20,8 +15,6 @@ public class PlayerFlightPower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
 
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-
-    private int storedAmount;
 
     public PlayerFlightPower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -39,7 +32,7 @@ public class PlayerFlightPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        if(this.amount > 1)
+        if (this.amount > 1)
             this.description = DESCRIPTIONS[0] + this.amount + " times.";
         else
             this.description = DESCRIPTIONS[0] + this.amount + " time.";

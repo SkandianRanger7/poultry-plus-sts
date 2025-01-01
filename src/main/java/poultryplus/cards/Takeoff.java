@@ -8,7 +8,7 @@ import poultryplus.character.MyCharacter;
 import poultryplus.powers.PlayerFlightPower;
 import poultryplus.util.CardStats;
 
-public class Takeoff extends BaseCard{
+public class Takeoff extends BaseCard {
     public static final String ID = makeID("Takeoff");
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
@@ -21,7 +21,7 @@ public class Takeoff extends BaseCard{
     private static final int FLIGHT = 2;
     private static final int UPG_FLIGHT = 3;
 
-    public Takeoff(){
+    public Takeoff() {
         super(ID, info);
 
         setMagic(FLIGHT, UPG_FLIGHT);
@@ -29,7 +29,7 @@ public class Takeoff extends BaseCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(!AbstractDungeon.player.hasPower("Flight")) {
+        if (!AbstractDungeon.player.hasPower("Flight")) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PlayerFlightPower(p, magicNumber)));
         }
     }

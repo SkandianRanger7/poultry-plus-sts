@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class EggBanditFollowUpAction extends AbstractGameAction {
     public void update() {
-        AbstractDungeon.actionManager.addToTop((AbstractGameAction)new WaitAction(0.4F));
+        AbstractDungeon.actionManager.addToTop(new WaitAction(0.4F));
         tickDuration();
         if (this.isDone)
             for (AbstractCard c : DrawCardAction.drawnCards) {

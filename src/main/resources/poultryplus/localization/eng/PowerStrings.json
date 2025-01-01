@@ -5,7 +5,6 @@
       "You are Very Cool and Strong."
     ]
   },
-
   "${modID}:NextTurnFlight": {
     "NAME": "Next Turn Flight",
     "DESCRIPTIONS": [
@@ -13,7 +12,6 @@
       " #yFlight next turn"
     ]
   },
-
   "${modID}:NextTurnFlightMult": {
     "NAME": "Next Turn Flight Multiplication",
     "DESCRIPTIONS": [
@@ -21,7 +19,6 @@
       " times your #yFlight next turn"
     ]
   },
-
   "${modID}:SkyDrop": {
     "NAME": "Sky Drop",
     "DESCRIPTIONS": [
@@ -31,7 +28,6 @@
       " damage."
     ]
   },
-
   "${modID}:NextTurnApplyVulnerable": {
     "NAME": "Next Turn Apply Vulnerable",
     "DESCRIPTIONS": [
@@ -39,7 +35,6 @@
       " #yVulnerable to all enemies next turn."
     ]
   },
-
   "${modID}:Tailwind": {
     "NAME": "Tailwind",
     "DESCRIPTIONS": [

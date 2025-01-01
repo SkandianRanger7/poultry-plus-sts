@@ -1,18 +1,12 @@
 package poultryplus.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.ModifyBlockAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import poultryplus.character.MyCharacter;
 import poultryplus.util.CardStats;
 
-public class Defend extends BaseCard{
+public class Defend extends BaseCard {
     public static final String ID = makeID("Defend");
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,

@@ -6,7 +6,6 @@
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
   },
-
   "${modID}:WoodenDuck": {
     "NAME": "Wooden Duck",
     "FLAVOR": "A little guy!",
@@ -14,7 +13,6 @@
       "At the start of each combat, gain #b1 #yFlight per #b50 #yGold."
     ]
   },
-
   "${modID}:CrowEye": {
     "NAME": "Crow's Eye",
     "FLAVOR": "Shininess is in the eye of the beholder",
@@ -23,7 +21,6 @@
       " #yGold."
     ]
   },
-
   "${modID}:HookedBeak": {
     "NAME": "Hooked Beak",
     "FLAVOR": "PLACEHOLDER",

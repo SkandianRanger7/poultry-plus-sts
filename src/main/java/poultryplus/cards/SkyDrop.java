@@ -4,12 +4,11 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
 import poultryplus.character.MyCharacter;
 import poultryplus.powers.SkyDropPower;
 import poultryplus.util.CardStats;
 
-public class SkyDrop extends BaseCard{
+public class SkyDrop extends BaseCard {
     // Lose all flight and give to enemy, once they lose it they take damage based on how much flight
     public static final String ID = makeID("SkyDrop");
     private static final CardStats info = new CardStats(
@@ -23,7 +22,7 @@ public class SkyDrop extends BaseCard{
     private static final int INTENSITY = 10;
     private static final int DURATION = 5;
 
-    public SkyDrop(){
+    public SkyDrop() {
         super(ID, info);
 
         setMagic(INTENSITY);

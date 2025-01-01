@@ -1,11 +1,10 @@
 package poultryplus.relics;
 
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import poultryplus.character.MyCharacter;
 
 import static poultryplus.BasicMod.makeID;
 
-public class HookedBeak extends BaseRelic{
+public class HookedBeak extends BaseRelic {
     private static final String NAME = "HookedBeak"; //for image file and ID
     private static final String ID = makeID(NAME); //Adds mod prefix to relic id
     private static final RelicTier RARITY = RelicTier.STARTER;
@@ -16,7 +15,6 @@ public class HookedBeak extends BaseRelic{
     public HookedBeak() {
         super(ID, NAME, MyCharacter.Meta.CARD_COLOR, RARITY, SOUND);
     }
-
 
 
     @Override

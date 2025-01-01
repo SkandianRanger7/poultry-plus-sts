@@ -11,9 +11,7 @@ import poultryplus.character.MyCharacter;
 import poultryplus.util.CardStats;
 import poultryplus.util.EggBanditFollowUpAction;
 
-import static poultryplus.cards.BaseCard.makeID;
-
-public class EggBandit extends BaseCard{
+public class EggBandit extends BaseCard {
     // Draw but specifically for egg cards
     public static final String ID = makeID("EggBandit");
     private static final CardStats info = new CardStats(
@@ -37,6 +35,6 @@ public class EggBandit extends BaseCard{
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber, (AbstractGameAction)new EggBanditFollowUpAction()));
+        addToBot(new DrawCardAction(this.magicNumber, new EggBanditFollowUpAction()));
     }
 }
