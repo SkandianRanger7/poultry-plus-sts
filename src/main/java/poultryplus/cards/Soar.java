@@ -20,7 +20,7 @@ public class Soar extends BaseCard {
             1
     );
     private static final int FLIGHT = 1;
-    private static final int UPG_FLIGHT = 2;
+    private static final int UPG_FLIGHT = 1;
     private static final int DRAW = 1;
 
     public Soar() {

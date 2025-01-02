@@ -21,7 +21,7 @@ public class Tailwind extends BaseCard {
     );
 
     int FLIGHT = 1;
-    int UPG_FLIGHT = 2;
+    int UPG_FLIGHT = 1;
 
     public Tailwind() {
         super(ID, info);

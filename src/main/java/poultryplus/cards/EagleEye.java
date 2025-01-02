@@ -31,8 +31,8 @@ public class EagleEye extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (AbstractDungeon.player.hasPower("Flight")) {
-            int VULNERABLE = VULNERABLEMULT * p.getPower("Flight").amount;
-            addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, VULNERABLE, false), magicNumber));
+            int vulnerable = magicNumber * p.getPower("Flight").amount;
+            addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, vulnerable, false)));
         }
     }
 }

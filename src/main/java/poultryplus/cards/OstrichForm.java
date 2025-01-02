@@ -19,7 +19,7 @@ public class OstrichForm extends BaseCard {
             2
     );
     private static final int BUFF = 3;
-    private static final int UPG_BUFF = 4;
+    private static final int UPG_BUFF = 1;
 
     public OstrichForm() {
         super(ID, info);

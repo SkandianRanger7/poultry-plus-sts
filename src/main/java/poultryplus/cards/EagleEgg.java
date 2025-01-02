@@ -22,7 +22,7 @@ public class EagleEgg extends BaseCard {
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
     private static final int VULNERABLE = 1;
-    private static final int UPG_VULNERABLE = 2;
+    private static final int UPG_VULNERABLE = 1;
 
     public EagleEgg() {
         super(ID, info);

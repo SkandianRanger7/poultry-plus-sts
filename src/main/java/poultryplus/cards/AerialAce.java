@@ -18,9 +18,9 @@ public class AerialAce extends BaseCard {
             1
     );
     private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 8;
+    private static final int UPG_DAMAGE = 2;
     private static final int EXTRA_DMG = 4;
-    private static final int UPG_EXTRA_DMG = 6;
+    private static final int UPG_EXTRA_DMG = 2;
 
     public AerialAce() {
         super(ID, info);

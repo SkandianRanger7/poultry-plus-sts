@@ -18,8 +18,8 @@ public class Takeoff extends BaseCard {
             0
     );
 
-    private static final int FLIGHT = 2;
-    private static final int UPG_FLIGHT = 3;
+    private static final int FLIGHT = 3;
+    private static final int UPG_FLIGHT = 2;
 
     public Takeoff() {
         super(ID, info);

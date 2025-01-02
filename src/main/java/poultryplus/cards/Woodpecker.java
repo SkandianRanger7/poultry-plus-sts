@@ -22,7 +22,7 @@ public class Woodpecker extends BaseCard {
     );
     private static final int DAMAGE = 1;
     private static final int VULNERABLE = 3;
-    private static final int UPG_VULNERABLE = 2;
+    private static final int UPG_VULNERABLE = -1;
 
     public Woodpecker() {
         super(ID, info);
