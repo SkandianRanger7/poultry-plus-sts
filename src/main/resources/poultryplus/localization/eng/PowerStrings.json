@@ -41,5 +41,12 @@
       "Whenever you gain #yFlight, gain an additional ",
       " #yFlight."
     ]
+  },
+  "${modID}:OstrichForm": {
+    "NAME": "Ostrich Form",
+    "DESCRIPTIONS": [
+      "Lose ",
+      " #yFlight at the start of each turn."
+    ]
   }
 }

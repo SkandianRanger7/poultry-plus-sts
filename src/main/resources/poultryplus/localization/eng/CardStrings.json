@@ -80,5 +80,9 @@
   "${modID}:Tailwind": {
     "NAME": "Tailwind",
     "DESCRIPTION": "Whenever you gain *Flight, gain an addition !M! *Flight."
+  },
+  "${modID}:OstrichForm": {
+    "NAME": "Ostrich Form",
+    "DESCRIPTION": "Gain !M! *Strength. NL Gain !M! *Dexterity. NL Lose !M! *Flight at the start of each turn."
   }
 }
