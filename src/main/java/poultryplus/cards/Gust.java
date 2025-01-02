@@ -31,7 +31,7 @@ public class Gust extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!AbstractDungeon.player.hand.isEmpty()) {
+        if (!(AbstractDungeon.player.hand.size() == 1)) {
             if (this == AbstractDungeon.player.hand.group.get(AbstractDungeon.player.hand.size() - 1)) {
                 addToBot(new DiscardSpecificCardAction(AbstractDungeon.player.hand.group.get(AbstractDungeon.player.hand.size() - 2)));
             } else {
