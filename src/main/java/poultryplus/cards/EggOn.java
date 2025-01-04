@@ -38,8 +38,10 @@ public class EggOn extends BaseCard {
                     count++;
                 }
             }
-            addToBot(new ApplyPowerAction(m, p, new WeakPower(m, count, false)));
-            addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, count, false)));
+            if (count > 0) {
+                addToBot(new ApplyPowerAction(m, p, new WeakPower(m, count, false)));
+                addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, count, false)));
+            }
         }
 
     }
