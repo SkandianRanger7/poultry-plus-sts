@@ -21,13 +21,13 @@ public class Soar extends BaseCard {
     );
     private static final int FLIGHT = 1;
     private static final int UPG_FLIGHT = 1;
-    private static final int DRAW = 1;
+    private static final int DRAW = 2;
 
     public Soar() {
         super(ID, info);
 
         setMagic(FLIGHT, UPG_FLIGHT);
-        setCustomVar("soarDraw", VariableType.MAGIC, 2);
+        setCustomVar("soarDraw", VariableType.MAGIC, DRAW);
     }
 
     @Override
