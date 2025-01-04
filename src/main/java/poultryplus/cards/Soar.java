@@ -27,13 +27,12 @@ public class Soar extends BaseCard {
         super(ID, info);
 
         setMagic(FLIGHT, UPG_FLIGHT);
-
-        tags.add(AbstractCard.CardTags.STARTER_DEFEND);
+        setCustomVar("soarDraw", VariableType.MAGIC, 2);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new PlayerFlightPower(p, magicNumber)));
-        addToBot(new DrawCardAction(DRAW));
+        addToBot(new DrawCardAction(customVar("soarDraw")));
     }
 }
