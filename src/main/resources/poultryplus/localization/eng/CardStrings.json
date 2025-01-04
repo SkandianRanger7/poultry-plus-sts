@@ -31,7 +31,7 @@
   },
   "${modID}:EggBandit": {
     "NAME": "Egg Bandit",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard all cards drawn this way that do not contain \"Egg\"."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard all cards drawn this way that do not contain \"Egg\" then deal !${modID}:ExtraDmg! for each remaining card."
   },
   "${modID}:Omelette": {
     "NAME": "Omelette",
