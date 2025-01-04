@@ -28,6 +28,6 @@ public class Defend extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, BLOCK));
+        addToBot(new GainBlockAction(p, p, block));
     }
 }
